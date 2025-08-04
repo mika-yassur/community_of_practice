@@ -32,3 +32,34 @@
     transform: translate(-50%, -100%);
     margin-top: -10px;
 }
+
+.node {
+    fill: white;
+    stroke: white;
+    stroke-width: 2px;
+    cursor: move;
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+.node:hover {
+    fill: #555555; /* darker gray instead of yellow */
+    stroke: #aaaaaa;
+}
+
+.node.highlighted {
+    fill: #444444;  /* very dark gray */
+    stroke: #bbbbbb;
+}
+
+.link.highlighted {
+    stroke: #bbbbbb;
+    stroke-opacity: 1;
+    stroke-width: 2px;
+}
+
+.link.connected {
+    stroke: #bbbbbb;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    transition: stroke 0.3s;
+}
