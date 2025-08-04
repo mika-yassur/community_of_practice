@@ -144,6 +144,12 @@
             { id: "atmosphere", x: 900, y: 2200 },
             { id: "home", x: 200, y: 2300 },
 
+            { id: "rehearsal", x: 1000, y: 2400 },
+            { id: "performance", x: 1100, y: 2500 },
+            { id: "repetition", x: 1200, y: 2600 },
+            { id: "exhibition", x: 1300, y: 2700 },
+            { id: "embodiment", x: 1400, y: 2800 }
+
         ];
 
         const allLinks = [
@@ -206,6 +212,15 @@
             { source: "atmosphere", target: "toxicity" },
             { source: "home", target: "land"},
 
+            { source: "Samia Henni", target: "rehearsal" },
+            { source: "Samia Henni", target: "performance" },
+            { source: "rehearsal", target: "repetition" },
+            { source: "performance", target: "embodiment" },
+            { source: "embodiment", target: "aesthetics" },
+            { source: "aesthetics", target: "Forensic Architecture"},
+            { source: "earth berms", target: "repetition" },
+            { source: "ruination", target: "moving through walls" },
+            { source: "rebuilding", target: "repetition" },
         ];
 
         // Create a set of existing node IDs for quick lookup
